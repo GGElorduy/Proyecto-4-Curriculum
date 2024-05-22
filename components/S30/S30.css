@@ -1,0 +1,44 @@
+#s30 {
+  width: 30%;
+  border-right: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
+h1 {
+  margin-top: 20%;
+  margin-left: 20%;
+  font-size: 2em;
+}
+.avatarIcon {
+  margin: 0 auto;
+  width: 250px;
+  height: 250px;
+  border-radius: 50px;
+}
+nav > ul {
+  display: flex;
+  margin-top: 50%;
+  gap: 10px;
+  flex-direction: column;
+  padding-left: 20px;
+}
+li {
+  width: 150px;
+  border: 1px solid #ccc; /* Un color de borde más suave */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  padding: 10px; /* Espacio dentro del borde */
+  margin: 5px 0; /* Espacio entre los elementos de la lista */
+  transition: transform 0.2s, box-shadow 0.2s; /* Transiciones suaves para efectos */
+  cursor: pointer;
+}
+
+/* Agregar un efecto de hover para mejor interacción */
+li:hover {
+  transform: scale(
+    1.05
+  ); /* Aumenta ligeramente el tamaño al pasar el ratón por encima */
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada al pasar el ratón por encima */
+}
