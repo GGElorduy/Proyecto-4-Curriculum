@@ -15,7 +15,7 @@
   align-items: center;
   gap: var(--rtc-gap-l);
 
-  background-color: var(--rtc-li-background);
+  background-color: var(--rtc-article-background);
   border: 1px solid #ddd;
   border-radius: 8px;
   padding: 0 var(--rtc-padding-s);
@@ -32,13 +32,13 @@ h1 {
   height: 250px;
   border-radius: 50%;
 }
-nav > ul {
+#s30 nav > ul {
   display: flex;
   gap: 10px;
   flex-direction: column;
   padding-left: 20px;
 }
-li {
+#s30 li {
   width: 150px;
   background-color: var(--rtc-li-background);
   border: 1px solid #ccc; /* Un color de borde más suave */

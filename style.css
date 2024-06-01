@@ -13,9 +13,11 @@
   --rtc-color-5: rgb(28, 30, 39);
 
   --rtc-body-background: var(--rtc-color-5);
-  --rtc-section30-background: var(--rtc-color-4);
-  --rtc-section70-background: var(--rtc-color-3);
-  --rtc-li-background: var(--rtc-color-3);
+  --rtc-section70-background: var(--rtc-color-2);
+  --rtc-section30-background: var(--rtc-color-3);
+  --rtc-article-background: var(--rtc-color-1);
+  --rtc-div-background: var(--rtc-color-1);
+  --rtc-li-background: var(--rtc-color-1);
   --rtc-footer-background: var(--rtc-color-100);
 
   --rtc-margin-xs: 10px;
