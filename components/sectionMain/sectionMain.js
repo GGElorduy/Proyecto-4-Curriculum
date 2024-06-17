@@ -2,6 +2,7 @@ import './sectionMain.css'
 import { school } from '../../assets/school'
 import { skills } from '../../assets/skills'
 import { experience } from '../../assets/experience'
+import { projects } from '../../assets/proyect'
 
 export const printPersonalInfo = () => {
   const hero = document.querySelector('#hero')
@@ -76,6 +77,7 @@ export const printSkills = () => {
   for (let i = 0; i < skills.length; i++) {
     const card = document.createElement('li')
     const title = document.createElement('h3')
+    card.className = 'card'
     allCards.appendChild(card)
     card.appendChild(title)
     title.textContent = skills[i].Name
@@ -129,10 +131,12 @@ export const printExp = () => {
   hero.appendChild(allCards)
   for (let i = 0; i < experience.length; i++) {
     const card = document.createElement('li')
+    card.className = 'card'
     const title = document.createElement('h3')
     const company = document.createElement('h4')
     const time = document.createElement('p')
     const location = document.createElement('p')
+
     allCards.appendChild(card)
     card.appendChild(title)
     card.appendChild(company)
@@ -166,8 +170,32 @@ export const printExp = () => {
     })
   }
 }
-
-export const printProyect = () => {
+export const printProject = () => {
   const hero = document.querySelector('#hero')
   hero.innerHTML = ''
+  const h2 = document.createElement('h2')
+  h2.textContent = 'Recent Projects'
+  hero.appendChild(h2)
+  const allCards = document.createElement('ul')
+  allCards.className = 'allCards'
+  hero.appendChild(allCards)
+  for (let i = 0; i < projects.length; i++) {
+    const a = document.createElement('a')
+    a.href = projects[i].link
+
+    const li = document.createElement('li')
+    li.className = 'card'
+    const h3 = document.createElement('h3')
+    h3.textContent = projects[i].Name
+    const img = document.createElement('img')
+    img.src = projects[i].img
+    img.className = 'project-pic'
+    const p = document.createElement('p')
+    p.textContent = projects[i].desccription
+    allCards.appendChild(a)
+    a.appendChild(li)
+    li.appendChild(h3)
+    li.appendChild(img)
+    li.appendChild(p)
+  }
 }

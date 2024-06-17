@@ -1,6 +1,6 @@
 #s70 {
-  max-width: 70%;
-  width: 70%;
+  max-width: 85%;
+  width: 85%;
   height: 100%;
   background-color: var(--rtc-section70-background);
 }
@@ -50,6 +50,11 @@
   flex-wrap: wrap;
   max-width: 100%;
 }
+#s70 .section li {
+  border: black 1px solid;
+  border-radius: 10px;
+  padding: 5px;
+}
 .allCards {
   display: flex;
   flex-wrap: wrap;
@@ -57,7 +62,13 @@
   gap: 50px;
 }
 .card {
-  border: 1px solid black;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  cursor: pointer;
 }
 
 .table-container {
@@ -82,7 +93,51 @@ th {
   background-color: #f4f4f4;
   font-weight: bold;
 }
+
 .list {
+  display: flex;
+  flex-wrap: wrap;
   min-width: 100%;
+  max-width: 100%;
   min-height: 80%;
+  list-style-type: none; /* Elimina los marcadores de lista predeterminados */
+  padding: 0; /* Elimina el padding predeterminado */
+  margin: 0; /* Elimina el margen predeterminado */
+  margin-top: 20px;
+  font-family: 'Arial, sans-serif'; /* Cambia la fuente */
+}
+
+.list li {
+  background-color: #f9f9f9; /* Fondo claro para los ítems */
+  width: fit-content;
+  margin: 10px 10px; /* Margen entre ítems */
+  padding: 15px 20px; /* Espacio interno de los ítems */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  transition: background-color 0.3s, transform 0.3s; /* Transiciones suaves */
+}
+
+.list li:hover {
+  background-color: #e9e9e9; /* Cambio de color al pasar el cursor */
+  transform: translateY(-3px); /* Levanta el ítem al pasar el cursor */
+}
+
+.list li:before {
+  content: '•'; /* Añade un marcador personalizado */
+  color: #3498db; /* Color del marcador */
+  font-size: 20px; /* Tamaño del marcador */
+  margin-right: 10px; /* Espacio entre el marcador y el texto */
+}
+
+.list li:first-child {
+  margin-top: 0; /* Sin margen superior para el primer ítem */
+}
+
+.list li:last-child {
+  margin-bottom: 0; /* Sin margen inferior para el último ítem */
+}
+
+.project-pic {
+  width: 100px;
+  height: 50px;
 }

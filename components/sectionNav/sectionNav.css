@@ -1,5 +1,5 @@
 #s30 {
-  width: 30%;
+  width: 15%;
   height: 100%;
   border-right: 2px solid black;
   display: flex;
@@ -51,7 +51,7 @@ h1 {
 }
 
 /* Agregar un efecto de hover para mejor interacción */
-li:hover {
+#s30 li:hover {
   transform: scale(
     1.05
   ); /* Aumenta ligeramente el tamaño al pasar el ratón por encima */
